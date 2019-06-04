@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.bg{
+			background-color: black;
+			
+		}
+		.bang-img, .mem-img, .treasure-img{
+			display: none;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="row">
+	
+		<div class="col-6 ">
+
+			<h1 class="task">Найди 6 кладов</h1>
+			<h1>Score: <span class="score">0</span></h1>
+			<div class="row">
+				<div class="col-1 px-5 py-3  bg-warning text-center border"></div>
+				<div class="col-1 px-5 py-3  bg-warning text-center border">
+					<h4>1</h4>
+				</div>
+				<div class="col-1 px-5 py-3  bg-warning text-center border">
+					<h4>2</h4>
+				</div>
+				<div class="col-1 px-5 py-3  bg-warning text-center border">
+					<h4>3</h4>
+				</div>
+				<div class="col-1 px-5 py-3  bg-warning text-center border">
+					<h4>4</h4>
+				</div>
+				<div class="col-1 px-5  py-3 bg-warning text-center border">
+					<h4>5</h4>
+				</div>
+				<div class="col-1 px-5 py-3  bg-warning text-center border">
+					<h4>6</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1 px-5 py-4 bg-warning text-center border">
+					<h4>A</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border bang">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border mem">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border mem">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border treasure">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border trues">
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border mem">
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1  px-5 py-4 bg-warning text-center border">
+					<h4>B</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border mem">
+
+				</div>
+				<div class="col-1  px-5 py-4 bg border mem">
+				
+				</div>
+				<div class="col-1  px-5 py-4 bg border mem">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border trues">
+					
+				</div>
+				<div class="col-1 px-5 py-4 bang bg border ">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border treasure">
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1 px-5 py-4  bg-warning text-center border">
+					<h4>C</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border bang">
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border treasure">
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border trues">
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border mem">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border mem">
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border mem">
+					
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-1 px-5 py-4  bg-warning text-center border">
+					<h4>D</h4>
+				</div>
+				<div class="col-1  px-5 py-4 bg border trues">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border mem ">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border treasure">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border mem">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border bang">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border mem">
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1 px-5 py-4  bg-warning text-center border">
+					<h4>E</h4>
+				</div>
+				<div class="col-1 px-5 py-4  bg border treasure">
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border mem">
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border mem">
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border bang">
+					
+				</div>
+				<div class="col-1 px-5 py-4  bg border trues">
+					
+				</div>
+				<div class="col-1  px-5 py-4 bg border mem ">
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1 px-5 py-4 bg-warning text-center border">
+					<h4>F</h4>
+				</div>
+				<div class="col-1 px-5 py-4 bg border mem">
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border treasure">
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border trues">
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border mem">
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border bang">
+					
+				</div>
+				<div class="col-1 px-5 py-4 bg border mem">
+					
+				</div>
+			</div>
+		</div>
+			<div class="col-6">
+			<div class="voprosy">
+				<p>кто глава Якутии?
+				</p>
+				<input type="text" name="" class="input-text">
+				<button class="btn btn-primary x" type="submit">нажать</button>
+			</div>
+			<div class="voprosy">
+				<p>когда умер Лжедмитрий 1?
+				</p>
+				<input type="text" name="" class="input-text">
+				<button class="btn btn-primary i" type="submit">нажать</button>
+			</div>
+			<div class="voprosy">
+				<p>сколько стоит проезд в автобусе?
+				</p>
+				<input type="text" name="" class="input-text">
+				<button class="btn btn-primary g" type="submit">нажать</button>
+			</div>
+			<div class="voprosy">
+				<p>как был убит Дмитрий сын Ивана 4?
+				</p>
+				<input type="text" name="" class="input-text">
+				<button class="btn btn-primary w" type="submit">нажать</button>
+			</div>
+			<div class="voprosy">
+				<p>сколько букв алфавите?
+				</p>
+				<input type="text" name="" class="input-text">
+				<button class="btn btn-primary q" type="submit">нажать</button>
+			</div>
+			<div class="voprosy">
+				<p>В каком году создали Майнкрафт?
+				</p>
+				<input type="text" name="" class="input-text">
+				<button class="btn btn-primary a" type="submit">нажать</button>
+			</div>
+		</div>
+			<div class="col-4"></div>
+			<div class=" col-1 py-2 bg-success finish">
+				<h2 class="mr-5">Finish</h2>
+			</div>
+	</div>
+<script type="text/javascript">
+	//очки + 
+	//перезагурзка страницы при взрыве + 
+	//setTimeout() сначала все в мемах  +
+	//верстка готова частично  
+	//переделать на bg-image  + 
+	let score = 0;
+	let score_block = document.querySelector(".score");
+
+	let treasure = document.querySelectorAll(".treasure");
+	
+	let bang = document.querySelectorAll(".bang");
+	
+	let mem = document.querySelectorAll(".mem");
+
+	let trues = document.querySelectorAll(".trues")
+
+	let vopros = document.querySelectorAll(".voprosy")
+
+
+
+	let end = document.querySelector(".finish").onclick = function(){
+				if( score >= 20){
+					alert("You win");
+				}else{
+					alert("You lose")
+					}
+				setTimeout(reload,2000);
+				}
+	let inp = document.querySelectorAll(".input-text")
+
+
+		document.querySelector(".x").onclick = function(){
+			//alert(inp.value)
+			if (inp[0].value == "айсен"){
+				alert("правильно")
+			}
+			else{
+				alert("неправильно")
+			}
+		}
+	
+		document.querySelector(".i").onclick = function(){
+			//alert(inp.value)
+			if (inp[1].value == 1606){
+				alert("правильно")
+			}
+			else{
+				alert("неправильно")
+			}
+		}
+		document.querySelector(".g").onclick = function(){
+			//alert(inp.value)
+			if (inp[2].value == 28){
+				alert("правильно")
+			}
+			else{
+				alert("неправильно")
+			}
+		}
+		document.querySelector(".w").onclick = function(){
+			//alert(inp.value)
+			if (inp[3].value == "ножом"){
+				alert("правильно")
+			}
+			else{
+				alert("неправильно")
+			}
+		}
+		document.querySelector(".q").onclick = function(){
+			//alert(inp.value)
+			if (inp[4].value == 33){
+				alert("правильно")
+			}
+			else{
+				alert("неправильно")
+			}
+		}
+		document.querySelector(".a").onclick = function(){
+			//alert(inp.value)
+			if (inp[5].value == 2009){
+				alert("правильно")
+			}
+			else{
+				alert("неправильно")
+			}
+		}	
+	
+	for(let index = 0; index<6; index = index + 1){//цикл
+
+	}
+	for(let index = 0; index<4; index = index + 1){//цикл
+			trues[index].onclick= function(){}
+	}
+	for(let i=0;i<trues.length; i = i + 1){
+		trues[i].onclick = function(){
+			score = score + 5;
+			score_block.innerHTML = score;
+			trues[i].style.background = "yellow";
+			trues[i].style.backgroundImage = "url(true.png)";
+			trues[i].style.backgroundSize = "100% 100%";
+			trues[i].style.transition = "2s";
+
+		}
+	}	
+
+	for(let i=0;i<treasure.length; i = i + 1){
+		treasure[i].onclick = function(){
+			score = score + 1;
+			score_block.innerHTML = score;
+			treasure[i].style.background = "green";
+			treasure[i].style.backgroundImage = "url(treasure.png)";
+			treasure[i].style.backgroundSize = "100% 100%";
+			treasure[i].style.transition = "2s";
+		}
+	}
+
+	for(let i=0;i<bang.length;i=i+1){
+		bang[i].onclick = function(){
+			score = score - 1;
+			score_block.innerHTML = score;
+			bang[i].style.background = "red";
+			bang[i].style.backgroundImage = "url(fail.png)";
+			bang[i].style.backgroundSize = "100% 100%";
+			setTimeout(reload,2000);
+			alert("you lose")
+		}
+	}
+
+
+	for(let i=0;i<mem.length;i++){
+		mem[i].onclick = function(){
+			mem[i].style.backgroundImage = "url(mem.jpg)";
+			mem[i].style.backgroundSize = "100% 100%";
+			mem[i].style.opacity = "1";
+
+		}
+	}
+
+
+	let change = function(){
+		 document.querySelector(".task").style.display = "block";
+	}
+	setTimeout(change,1000);
+	let reload = function(){
+		location.reload();
+	}
+	
+
+
+
+
+	
+
+	
+
+</script>
+</body>
+</html>
